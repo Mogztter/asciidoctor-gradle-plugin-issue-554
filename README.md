@@ -29,8 +29,8 @@ Then edit the `build.gradle` and update the version of the Rouge dependency to 3
 Once it's done you should get the following output:
 
 ```console
-grep rouge build.gradle
-asciidoctorGems 'rubygems:rouge:3.19.0'
+$ grep rouge build.gradle
+  asciidoctorGems 'rubygems:rouge:3.19.0'
 ```
 
 Then, build again:
