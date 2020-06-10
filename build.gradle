@@ -6,7 +6,7 @@ plugins {
 }
 
 dependencies {
-  asciidoctorGems 'rubygems:rouge:3.18.0'
+  asciidoctorGems 'rubygems:rouge:3.19.0'
 }
 
 repositories {
