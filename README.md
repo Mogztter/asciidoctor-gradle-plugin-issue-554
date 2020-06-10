@@ -6,6 +6,7 @@ Run the task for the first time (or use `./gradlew clean` to start on a clean wo
 
 ```console
 $ ./gradlew convert
+
 > Task :asciidoctorGemsPrepare
 Successfully installed rouge-3.18.0
 1 gem installed
