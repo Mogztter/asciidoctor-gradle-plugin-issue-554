@@ -1,0 +1,27 @@
+import org.asciidoctor.gradle.jvm.AsciidoctorTask
+
+plugins {
+  id 'org.asciidoctor.jvm.gems' version '3.1.0' apply true
+  id 'org.asciidoctor.jvm.convert' version '3.1.0' apply false
+}
+
+
+dependencies {
+  asciidoctorGems 'rubygems:rouge:3.19.0'
+}
+
+repositories {
+  mavenCentral()
+  jcenter()
+  ruby {
+    gems()
+  }
+}
+
+task convert(type: AsciidoctorTask) {
+  dependsOn asciidoctorGemsPrepare
+
+  baseDir file("${projectDir}/docs")
+  sourceDir file("${projectDir}/docs")
+  outputDir file("${projectDir}/build")
+}
